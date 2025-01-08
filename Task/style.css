@@ -1,0 +1,240 @@
+* {
+  padding: 0;
+  margin: 0;
+  /* box-sizing: border-box; */
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  background-color: rgba(0, 0, 0, 0.7);
+  /* width: calc(100% - 8px); */
+  align-items: center;
+  padding: 6px 20px;
+}
+
+i {
+    position: relative;
+}
+
+span {
+    color: white;
+    position: absolute;
+    font-size: 10px;
+    background-color: #000000;
+    border-radius: 50px;
+    padding: 2px;
+    top: 10px;
+    right: 191px;
+    z-index: 1;
+}
+
+i,
+p {
+  padding: 10px;
+  color: white;
+}
+
+.contact {
+  border: 2px solid #ffffff;
+  border-radius: 10px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.contact:hover {
+  background-color: white;
+  color: black;
+}
+
+.img {
+  background-image: url("Shopping-mall.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* width: 100vw; */
+  height: 200px;
+  position: relative;
+}
+
+h1 {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+  font-size: 50px;
+  color: black;
+}
+
+/* .search {
+  display: flex;
+  position: absolute;
+  top: 240px;
+  left: 310px;
+}
+
+.find {
+  background-color: #ffffff;
+  border-radius: 25px;
+  color: gray;
+  width: 660px;
+  height: 20px;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.1);
+  padding: 5px;
+  padding: 10px 15px;
+}
+
+.btn {
+  background-color: #000000;
+  color: gainsboro;
+  border-radius: 25px;
+  border: none;
+  width: 80px;
+  height: 40px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #444;
+} */
+
+.search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: -10px;
+    position: absolute;
+    left: 25%;
+    top: 230px;
+  }
+  
+  .search-input {
+    width: 600px;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 25px 0 0 25px; 
+    outline: none;
+    font-size: 14px;
+    color: #7a7a7a; 
+    background-color: #f5f5f5;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .search-button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 25px ;
+    background-color: #000; 
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    transform: translateX(-10px);
+  }
+  
+  .search-button:hover {
+    background-color: #333; 
+  }
+
+.container {
+  display: flex;
+  overflow-x: scroll;
+  padding: 20px;
+  gap: 10px;
+}
+
+h2 {
+  padding-top: 60px;
+  padding-left: 30px;
+  color: gray;
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f9f9f9;
+  border-radius: 15px;
+  padding: 15px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  width: 220px;
+}
+
+img {
+  object-fit: cover;
+  background-repeat: no-repeat;
+  width: 198px;
+  height: 203px;
+  margin: 20px;
+  border-radius: 15px;
+}
+
+.btn2 {
+  margin-left: 4px;
+  width: 198px;
+  height: 46px;
+  background-color: black;
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.btn2:hover {
+  background-color: #444;
+}
+
+@media (max-width: 768px) {
+    h1 {
+      font-size: 36px;
+      left: 5%;
+    }
+  
+    .find {
+      width: 90%;
+    }
+  
+    .items {
+      width: 160px;
+    }
+  
+    img {
+      width: 150px;
+      height: 150px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    nav {
+      flex-direction: column;
+      padding: 10px;
+    }
+  
+    i,
+    p {
+      font-size: 14px;
+    }
+  
+    h1 {
+      font-size: 24px;
+      left: 5%;
+    }
+  
+    .find {
+      width: 100%;
+    }
+  
+    .items {
+      width: 140px;
+    }
+  
+    img {
+      width: 120px;
+      height: 120px;
+    }
+  }

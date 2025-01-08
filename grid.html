@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Practice</title>
+    <style>
+        .container{
+            border: 2px solid goldenrod;
+            display: grid;
+            /* grid-template-columns: [pehla] 120px [dusra] 100px;
+            grid-template-rows: 100px 100px 100px; */
+            /* grid-template-columns: 10fr 20px auto 20px 10px; */
+            /* grid-t emplate-rows: 25% 50px auto; */
+            /* grid-template-columns: repeat(4, 1fr); */
+            /* grid-template-columns: repeat(4, minmax(100px, 1fr)); */
+            grid-template-areas: "nav nav nav"
+                                 "side article article"
+                                 "footer footer footer";
+
+            /* justify-items: center;
+            align-items: center; */
+        }
+
+        .items {
+            border: 2px solid black;
+            height: 50px;
+            /* width: 50px; */
+        }
+
+        /* .item4 {
+           grid-column: 1/dusra;
+           grid-row: 1/2; 
+           justify-self: center;
+           aligh-self: center;
+        } */ 
+
+        .item1 {
+            grid-area: nav;
+        }
+
+        .item2 {
+            grid-area: side;
+        }
+
+        .item3 {
+            grid-area: article;
+        }
+
+        .item4 {
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items item1">1</div>
+        <div class="items item2">2</div>
+        <div class="items item3">3</div>
+        <div class="items item4">4</div>
+        <!-- <div class="items">5</div> -->
+    </div>
+</body>
+</html>
